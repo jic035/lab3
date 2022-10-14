@@ -24,7 +24,7 @@ class ListExamples {
     List<String> result = new ArrayList<>();
     for(String s: list) {
       if(sc.checkString(s)) {
-        result.add(s); //delete the 0, or it will add from front
+        result.add(0, s); //delete the 0, or it will add from front
       }
     }
     return result;
