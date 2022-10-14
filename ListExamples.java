@@ -13,8 +13,6 @@ class LengthChecker implements StringChecker {
     }
     return false;
   }
-
-  
 }
 
 class ListExamples {
@@ -26,7 +24,7 @@ class ListExamples {
     List<String> result = new ArrayList<>();
     for(String s: list) {
       if(sc.checkString(s)) {
-        result.add(s); //delete the 0
+        result.add(s); //delete the 0, or it will add from front
       }
     }
     return result;

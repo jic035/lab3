@@ -24,4 +24,5 @@ public class ListTests{
 
         assertEquals(expect1, input1);
     }
+
 }
