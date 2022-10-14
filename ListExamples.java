@@ -1,7 +1,21 @@
 import java.util.ArrayList;
 import java.util.List;
 
-interface StringChecker { boolean checkString(String s); }
+interface StringChecker { 
+  boolean checkString(String s); 
+}
+
+class LengthChecker implements StringChecker {
+  
+  public boolean checkString(String s) {
+    if(s.length() > 5){
+      return true;
+    }
+    return false;
+  }
+
+  
+}
 
 class ListExamples {
 
@@ -12,7 +26,7 @@ class ListExamples {
     List<String> result = new ArrayList<>();
     for(String s: list) {
       if(sc.checkString(s)) {
-        result.add(0, s);
+        result.add(s); //delete the 0
       }
     }
     return result;
